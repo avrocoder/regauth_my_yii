@@ -1,0 +1,143 @@
+@import "reset.css";
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of Eric Meyer's CSS Reset */
+
+html {
+	height: 100%;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+body {
+	font: 12px/18px Arial, sans-serif;
+	height: 100%;
+}
+.wrapper {
+	width: 100%;
+	min-width: 1000px;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+}
+
+
+/* Header
+-----------------------------------------------------------------------------*/
+.header {
+	height: 20px;
+	background: #BFF08E;
+}
+
+
+/* Middle
+-----------------------------------------------------------------------------*/
+.content {
+	padding: 0 0 100px;
+        text-align: center;
+}
+
+/* Footer
+-----------------------------------------------------------------------------*/
+.footer {
+	margin: -30px auto 0;
+	min-width: 1000px;
+	height: 20px;
+	background: #BFF08E;
+	position: relative;
+        text-align: center;
+}
+
+form   {
+    width: 400px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    width:100%;
+    text-align: left;
+} 
+
+form input[type=text], form input[type=password], form textarea, form select, form input[type=file]{
+    width: 100%;
+}
+
+form div    {
+    margin-bottom: 5px;
+    color: blue;
+}
+
+.all_errors {
+    border: 1px dashed red;
+    width: 400px;
+    margin: 0 auto 10px;
+    color: red;
+}
+
+.error  {
+    color: red;
+}
+
+.datepick-month-header select   {
+    width: 45%;
+}
+
+.headpage   {
+    font-size: 16px;
+    margin: 10px auto;
+}
+
+.header ul li   {
+    display: inline;
+}
+
+.header {
+    text-align: right;
+    padding: 10px;
+}
+
+.profile    {
+    width: 300px;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.profile .headpage  {
+    text-align: center;
+}
+
+.profile .field    {
+    color: blue;
+}
+
+.profile span   {
+    font-size: 14px;
+    vertical-align: top;
+}
+
+.profile img    {
+    width: 100px;
+    height: 100px;
+}
