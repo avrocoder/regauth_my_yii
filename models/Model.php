@@ -179,13 +179,6 @@ class Model {
         if(empty($this->_scenario))
             throw new \Exception ("Unknown scenario for file validation");
         
-//        if(isset($_FILES[$this->_scenario]['name'][$attribute]))
-//        {
-            //var_dump($_FILES[$this->_scenario]['name'][$attribute]);
-//            $this->$attribute['name']=$_FILES[$this->_scenario]['name'][$attribute];
-//            $this->$attribute['tmp_name']=$_FILES[$this->_scenario]['tmp_name'][$attribute];
-//            $this->$attribute['size']=$_FILES[$this->_scenario]['size'][$attribute];
-//        }
         if(isset($_FILES[$this->_scenario]['name'][$attribute]))
         {
             if(isset($params['maxsize']))
