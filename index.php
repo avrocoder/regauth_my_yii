@@ -9,7 +9,7 @@ set_exception_handler("exception_handler");
     }
     else
     {
-        throw new Exception('The route does not exist');
+        $route='user/registration';
     }
 
 $route=str_replace('/','\\',$route);

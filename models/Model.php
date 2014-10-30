@@ -81,7 +81,7 @@ class Model {
                         
                 if (call_user_func_array([$this, $method . 'Validation'],$params)===false)
                 {
-                    throw new Exception('Does not exist method ' . $method . 'Validation');
+                    throw new \Exception('Does not exist method ' . $method . 'Validation');
                 }
             }
         }
@@ -168,7 +168,7 @@ class Model {
         $select=$mysqli->query("SELECT `id` FROM `{$table}` WHERE `{$attribute}`='$value'");
         if($select===false)
         {
-            throw new Exception('Query error to the database');
+            throw new \Exception('Query error to the database');
         }
         if ($select->num_rows>0)
             $this->addError($attribute, $message);
@@ -177,7 +177,7 @@ class Model {
     public function fileValidation($attribute, $value, array $params)
     {
         if(empty($this->_scenario))
-            throw new Exception ("Unknown scenario for file validation");
+            throw new \Exception ("Unknown scenario for file validation");
         
 //        if(isset($_FILES[$this->_scenario]['name'][$attribute]))
 //        {
@@ -205,7 +205,7 @@ class Model {
                 $preg=preg_match("/\.(?:{$extensions})$/i", $filename, $matches);
                 if($preg===false)
                 {
-                    throw new Exception ("Error in the extension lists");
+                    throw new \Exception ("Error in the extension lists");
                 }
                 if(!$preg)
                 {
